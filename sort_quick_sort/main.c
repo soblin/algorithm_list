@@ -19,29 +19,9 @@ void print(int *data, int size){
   }
 }
 
-void insert(int *data, int start, int end, int val){
-  int pos = start;
-
-  while(data[pos] < val && pos <= end)
-    pos++;
-
-  if(pos == (end+1)){
-    data[pos] = val;
+void quick_sort(int *data, int start, int end){
+  if(start == end)
     return;
-  }
-  
-  for(int i = end; i >= pos; --i){
-    data[i+1] = data[i];
-  }
-
-  data[pos] = val;
-}
-
-void simple_insertion(int *data, int size){
-  for(int i = 0; i <= size-2; ++i){
-    int val = data[i+1];
-    insert(data, 0, i, val);
-  }
 }
 
 int main(int argc, char **argv){
