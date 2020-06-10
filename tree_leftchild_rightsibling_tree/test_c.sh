@@ -1,6 +1,6 @@
 #!/bin/bash
 
-output=`./main <<EOF
+output=`./main_c <<EOF
 13
 0 3 1 4 10
 1 2 2 3
@@ -16,8 +16,8 @@ output=`./main <<EOF
 11 0
 12 0
 EOF`
-echo "$output"
-input=$'node 0: parent = -1, depth = 0, root, [1, 4, 10]
+
+expected=$'node 0: parent = -1, depth = 0, root, [1, 4, 10]
 node 1: parent = 0, depth = 1, internal node, [2, 3]
 node 2: parent = 1, depth = 2, leaf, []
 node 3: parent = 1, depth = 2, leaf, []
@@ -30,8 +30,8 @@ node 9: parent = 7, depth = 3, leaf, []
 node 10: parent = 0, depth = 1, internal node, [11, 12]
 node 11: parent = 10, depth = 2, leaf, []
 node 12: parent = 10, depth = 2, leaf, []'
-echo "$input"
-if [ "$input" = "$output" ]; then
+
+if [ "$expected" = "$output" ]; then
     echo "OK"
 else
     echo "NG"
