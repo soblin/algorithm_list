@@ -8,3 +8,4 @@
 | バブルソート<br>(bubble_sort)         | o | o   | o      | x     |
 | 選択ソート<br>(selection_sort)        | o | o   | o      | x     |
 | シェルソート<br>(shell_sort)          | o | o   | o      | x     |
+| キュー<br>(queue)                     | o | o   | x      | x     |
