@@ -4,7 +4,7 @@ try(){
     expected=$2
     input=$1
 
-    output=`./main $input`
+    output=`./main_cpp $input`
 
     if [ "$output" = "$expected" ]; then
         echo "OK: ($input) => ($expected)"
