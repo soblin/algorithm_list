@@ -9,3 +9,4 @@
 | 選択ソート<br>(selection_sort)        | o | o   | o      | x     |
 | シェルソート<br>(shell_sort)          | o | o   | o      | x     |
 | キュー<br>(queue)                     | o | o   | x      | x     |
+| 線形探索<br>(linear_search)           | o | o   | x      | x     |
