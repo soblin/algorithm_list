@@ -10,3 +10,4 @@
 | シェルソート<br>(shell_sort)          | o | o   | o      | x     |
 | キュー<br>(queue)                     | o | o   | 0      | x     |
 | 線形探索<br>(linear_search)           | o | o   | o      | x     |
+| 二分探索<br>(binary_search)           | o | o   | o      | x     |
