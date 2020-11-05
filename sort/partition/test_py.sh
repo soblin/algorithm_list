@@ -4,7 +4,7 @@ try(){
     expected=$2
     input=$1
 
-    output=`./main $input`
+    output=`python3 main.py $input`
 
     if [ "$output" = "$expected" ]; then
         echo "OK: ($input) => ($expected)"
