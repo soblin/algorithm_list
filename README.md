@@ -6,7 +6,7 @@
 | 3.3<br>(sort/bubble_sort)            | o | o   | o      | x     |
 | 3.4<br>(sort/selection_sort)         | o | o   | o      | x     |
 | 3.6<br>(sort/shell_sort)             | o | o   | o      | x     |
-| 4.3<br>(queue)                       | o | o   | 0      | x     |
+| 4.3<br>(queue)                       | o | o   | o      | x     |
 | 5.2<br>(search/linear_search)        | o | o   | o      | x     |
 | 5.3<br>(search/binary_search)        | o | o   | o      | x     |
 | 6.2<br>(search/exhaustive_search)    | o | -   | -      | -     |
@@ -19,3 +19,4 @@
 | 8.4<br>(tree/binary_tree_walk)       | o | o   | o      |       |
 | 9.1<br>(bintree/binsearch_insertion) | o | o   | o      |       |
 | 9.2<br>(bintree/binsearch_search)    | o | o   | o      |       |
+| 12.2<br>(graph/adj_matrix)           | o | -   | -      | -     |
