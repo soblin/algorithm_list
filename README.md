@@ -17,3 +17,4 @@
 | 7.3<br>(sort/quick_sort)            | o | o   | o      | x     |
 | 7.4<br>(sort/couting_sort)          | o | o   | o      | x     |
 | 7.5<br>(sort/minimal_cost_sort)     | o | x   | x      | x     |
+| 8.3<br>(tree/binary_tree)           | o | o   | -      | -     |
