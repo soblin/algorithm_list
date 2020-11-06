@@ -10,6 +10,9 @@ main_cpp: main.cpp
 test_cpp: main_cpp
 	./test_cpp.sh
 
+test_py:
+	./test_py.sh
+
 clean:
 	rm -rf main_c main_cpp
 
