@@ -19,3 +19,4 @@
 | 8.4<br>(tree/binary_tree_walk)       | o | o   | o      |       |
 | 9.1<br>(bintree/binsearch_insertion) | o | o   | o      |       |
 | 9.2<br>(bintree/binsearch_search)    | o | o   | o      |       |
+| 13.2<br>(weighted_graph/prim)        | x | o   | x      | x     |
