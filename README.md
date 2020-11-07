@@ -20,3 +20,4 @@
 | 9.1<br>(bintree/binsearch_insertion) | o | o   | o      |       |
 | 9.2<br>(bintree/binsearch_search)    | o | o   | o      |       |
 | 12.2<br>(graph/adj_matrix)           | o | -   | -      | -     |
+| 12.3<br>(graph/dfs)                  | o | o   | x      | x     |
