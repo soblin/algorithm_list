@@ -18,7 +18,8 @@
 | 8.3<br>(tree/binary_tree)                | o | o   | o      | x     |
 | 8.4<br>(tree/binary_tree_walk)           | o | o   | o      | x     |
 | 8.5<br>(tree/binary_tree_reconstruction) | o | x   | x      | x     |
-| 9.1<br>(bintree/binsearch_insertion)     | o | o   | o      | x     |
-| 9.2<br>(bintree/binsearch_search)        | o | o   | o      | x     |
+| 9.2<br>(bintree/binsearch_insertion)     | o | o   | o      | x     |
+| 9.3<br>(bintree/binsearch_search)        | o | o   | o      | x     |
+| 9.4<br>(bintree/binsearch_erase)         | o | o   | o      | x     |
 | 13.2<br>(weighted_graph/prim)            | x | o   | x      | x     |
 | 13.3<br>(weighted_graph/dijkstra)        | x | o   | x      | x     |
