@@ -20,3 +20,4 @@
 | 9.1<br>(bintree/binsearch_insertion) | o | o   | o      |       |
 | 9.2<br>(bintree/binsearch_search)    | o | o   | o      |       |
 | 13.2<br>(weighted_graph/prim)        | x | o   | x      | x     |
+| 13.3<br>(weighted_graph/dijkstra)    | x | o   | x      | x     |
