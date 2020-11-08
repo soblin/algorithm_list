@@ -18,7 +18,7 @@ int postOrder[N];
 
 int size = 0;
 
-int find(int *data, int size, int key){
+int find(const int *data, int size, int key){
   // inOrderにおけるkeyの位置
   for(int i = 0; i < size; ++i){
     if(key == data[i]){
