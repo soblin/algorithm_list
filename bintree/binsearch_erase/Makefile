@@ -1,11 +1,19 @@
-CFLAGS=-std=c11 -g -static
+main_c: main.c
+	gcc -std=c11 -g -static main.c -o main_c
 
-main: main.c
+test_c: main_c
+	./test_c.sh
 
-test: main
-	./test.sh
+main_cpp: main.cpp
+	g++ -std=c++11 -g -static main.cpp -o main_cpp
 
-clean: main
-	rm -rf main
+test_cpp: main_cpp
+	./test_cpp.sh
+
+test_py:
+	./test_py.sh
+
+clean:
+	rm -rf main_c main_cpp
 
 .PHONY: test clean
