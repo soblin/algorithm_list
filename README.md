@@ -15,11 +15,15 @@
 | 7.3<br>(sort/quick_sort)                 | o | o   | o      | x     |
 | 7.4<br>(sort/couting_sort)               | o | o   | o      | x     |
 | 7.5<br>(sort/minimal_cost_sort)          | o | x   | x      | x     |
-| 8.3<br>(tree/binary_tree)                | o | o   | -      | -     |
-| 8.4<br>(tree/binary_tree_walk)           | o | o   | o      |       |
-| 9.1<br>(bintree/binsearch_insertion)     | o | o   | o      |       |
-| 9.2<br>(bintree/binsearch_search)        | o | o   | o      |       |
-| 12.2<br>(graph/adj_matrix)               | o | -   | -      | -     |
+| 8.3<br>(tree/binary_tree)                | o | o   | o      | x     |
+| 8.4<br>(tree/binary_tree_walk)           | o | o   | o      | x     |
+| 8.5<br>(tree/binary_tree_reconstruction) | o | x   | x      | x     |
+| 9.2<br>(bintree/binsearch_insertion)     | o | o   | o      | x     |
+| 9.3<br>(bintree/binsearch_search)        | o | o   | o      | x     |
+| 9.4<br>(bintree/binsearch_erase)         | o | o   | o      | x     |
+| 12.2<br>(graph/adj_matrix)               | o | x   | x      | x     |
 | 12.3<br>(graph/dfs)                      | o | o   | x      | x     |
 | 12.4<br>(grpah/bfs)                      | o | o   | x      | x     |
 | 12.5<br>(graph/connected_<br>components) | x | o   | x      | x     |
+| 13.2<br>(weighted_graph/prim)            | x | o   | x      | x     |
+| 13.3<br>(weighted_graph/dijkstra)        | x | o   | x      | x     |
