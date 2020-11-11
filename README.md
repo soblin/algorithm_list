@@ -24,3 +24,4 @@
 | 13.2<br>(weighted_graph/prim)            | x | o   | x      | x     |
 | 13.3<br>(weighted_graph/dijkstra)        | x | o   | x      | x     |
 | 14.1<br>(union_find)                     | o | o   | x      | x     |
+| 14.2<br>(kdtree)                         | x | o   | x      | x     |
