@@ -25,7 +25,7 @@
 | 12.3<br>(graph/dfs)                      | o | o   | o      | x     |
 | 12.4<br>(grpah/bfs)                      | o | o   | o      | x     |
 | 12.5<br>(graph/connected_<br>components) | x | o   | o      | x     |
-| 13.2<br>(weighted_graph/prim)            | x | o   | x      | x     |
+| 13.2<br>(weighted_graph/prim)            | x | o   | o      | x     |
 | 13.3<br>(weighted_graph/dijkstra)        | x | o   | x      | x     |
 | 14.1<br>(union_find)                     | o | o   | x      | x     |
 | 14.2<br>(kdtree)                         | x | o   | x      | x     |
