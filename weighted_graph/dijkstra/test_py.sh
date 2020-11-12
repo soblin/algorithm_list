@@ -1,6 +1,6 @@
 #!/bin/bash
 
-output=`./main_cpp <<EOF
+output=`python3 main.py <<EOF
 5
 0 3 2 3 3 1 1 2
 1 2 0 2 3 4
@@ -22,7 +22,7 @@ else
     echo "$output"
 fi
 
-output=`./main_cpp <<EOF
+output=`python3 main.py <<EOF
 7
 0 4 1 10 2 3 4 18 5 11
 1 3 0 10 2 5 3 1
