@@ -23,7 +23,7 @@
 | 9.4<br>(bintree/binsearch_erase)         | o | o   | o      | x     |
 | 12.2<br>(graph/adj_matrix)               | o | o   | -      | -     |
 | 12.3<br>(graph/dfs)                      | o | o   | o      | x     |
-| 12.4<br>(grpah/bfs)                      | o | o   | x      | x     |
+| 12.4<br>(grpah/bfs)                      | o | o   | o      | x     |
 | 12.5<br>(graph/connected_<br>components) | x | o   | x      | x     |
 | 13.2<br>(weighted_graph/prim)            | x | o   | x      | x     |
 | 13.3<br>(weighted_graph/dijkstra)        | x | o   | x      | x     |
