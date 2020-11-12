@@ -6,7 +6,7 @@
 | 3.3<br>(sort/bubble_sort)                | o | o   | o      | x     |
 | 3.4<br>(sort/selection_sort)             | o | o   | o      | x     |
 | 3.6<br>(sort/shell_sort)                 | o | o   | o      | x     |
-| 4.3<br>(queue)                           | o | o   | 0      | x     |
+| 4.3<br>(queue)                           | o | o   | o      | x     |
 | 5.2<br>(search/linear_search)            | o | o   | o      | x     |
 | 5.3<br>(search/binary_search)            | o | o   | o      | x     |
 | 6.2<br>(search/exhaustive_search)        | o | -   | -      | -     |
@@ -21,6 +21,10 @@
 | 9.2<br>(bintree/binsearch_insertion)     | o | o   | o      | x     |
 | 9.3<br>(bintree/binsearch_search)        | o | o   | o      | x     |
 | 9.4<br>(bintree/binsearch_erase)         | o | o   | o      | x     |
+| 12.2<br>(graph/adj_matrix)               | o | x   | x      | x     |
+| 12.3<br>(graph/dfs)                      | o | o   | x      | x     |
+| 12.4<br>(grpah/bfs)                      | o | o   | x      | x     |
+| 12.5<br>(graph/connected_<br>components) | x | o   | x      | x     |
 | 13.2<br>(weighted_graph/prim)            | x | o   | x      | x     |
 | 13.3<br>(weighted_graph/dijkstra)        | x | o   | x      | x     |
 | 14.1<br>(union_find)                     | o | o   | x      | x     |
