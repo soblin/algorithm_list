@@ -8,6 +8,8 @@
 
 using namespace std;
 
+using cost_t = pair<int /*cost*/, int /*id*/>;
+
 int main(){
   int num_node;
   int k, u, v, c;
@@ -26,7 +28,8 @@ int main(){
     parent.push_back(-1);
   }
 
-  priority_queue<pair<int /*cost*/, int/*id*/>> PQ;
+  priority_queue<cost_t, vector<cost_t>, greater<cost_t>>
+      PQ; // costs of found nodes
   int start = 0;
   cost[start] = 0;
   color[start] = FOUND;
@@ -39,7 +42,8 @@ int main(){
 
     // 下のwhileでpushしたvはPQから削除される必要があるが，直接vをPQから削除できない
     // ここでcontinueされない場合，下のwhileで昔pushされた最短でないものを削除している
-    if(cost[min_cost_open_node] < f.first * (-1)) continue;
+    if (cost[min_cost_open_node] > f.first)
+      continue;
 
     for(int j = 0; j < mat[min_cost_open_node].size(); ++j){
       int v = mat[min_cost_open_node][j].first;
@@ -48,7 +52,7 @@ int main(){
       if(cost[v] > new_cost){
         cost[v] = new_cost;
         // priority_queue prioritize larger value
-        PQ.push(make_pair(-cost[v], v));
+        PQ.push(make_pair(cost[v], v));
         color[v] = FOUND;
         parent[v] = min_cost_open_node;
       }
