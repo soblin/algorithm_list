@@ -21,6 +21,9 @@
 | 9.2<br>(bintree/binsearch_insertion)     | o | o   | o      | x     |
 | 9.3<br>(bintree/binsearch_search)        | o | o   | o      | x     |
 | 9.4<br>(bintree/binsearch_erase)         | o | o   | o      | x     |
+| 11.2<br>(dp/fib)                         | o | o   | -      | -     |
+| 11.3<br>(dp/lcs)                         | o | o   | -      | -     |
+| 11.4<br>(dp/mat_chain_product)           | o | o   | -      | -     |
 | 12.2<br>(graph/adj_matrix)               | o | o   | -      | -     |
 | 12.3<br>(graph/dfs)                      | o | o   | o      | x     |
 | 12.4<br>(grpah/bfs)                      | o | o   | o      | x     |
