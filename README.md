@@ -33,3 +33,4 @@
 | 14.1<br>(union_find)                     | o | o   | x      | x     |
 | 14.2<br>(kdtree)                         | x | o   | x      | x     |
 | 15.1<br>(advanced_graph/warshall_floyd)  | o | o   | x      | x     |
+| 15.2<br>(advanced_graph/tsort)           | x | o   | x      | x     |
