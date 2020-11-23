@@ -34,3 +34,5 @@
 | 14.2<br>(kdtree)                         | x | o   | x      | x     |
 | 15.1<br>(advanced_graph/warshall_floyd)  | o | o   | x      | x     |
 | 15.2<br>(advanced_graph/tsort)           | x | o   | x      | x     |
+| 15.4<br>(advanced_graph/tree_diameter)   | x | o   | x      | x     |
+| 15.5<br>(advanced_graph/kruskal)         | x | o   | o      | x     |
