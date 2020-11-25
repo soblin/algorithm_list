@@ -22,7 +22,7 @@
 | 9.3<br>(bintree/binsearch_search)        | o | o   | o      | x     |
 | 9.4<br>(bintree/binsearch_erase)         | o | o   | o      | x     |
 | 11.2<br>(dp/fib)                         | o | o   | o      | x     |
-| 11.3<br>(dp/lcs)                         | o | o   | x      | x     |
+| 11.3<br>(dp/lcs)                         | o | o   | o      | x     |
 | 11.4<br>(dp/mat_chain_product)           | o | o   | x      | x     |
 | 12.2<br>(graph/adj_matrix)               | o | o   | -      | -     |
 | 12.3<br>(graph/dfs)                      | o | o   | o      | x     |
