@@ -32,7 +32,7 @@
 | 13.3<br>(weighted_graph/dijkstra)        | x | o   | o      | x     |
 | 14.1<br>(union_find)                     | o | o   | o      | x     |
 | 14.2<br>(kdtree)                         | x | o   | x      | x     |
-| 15.1<br>(advanced_graph/warshall_floyd)  | o | o   | x      | x     |
+| 15.1<br>(advanced_graph/warshall_floyd)  | o | o   | o      | x     |
 | 15.2<br>(advanced_graph/tsort)           | x | o   | x      | x     |
 | 15.4<br>(advanced_graph/tree_diameter)   | x | o   | o      | x     |
 | 15.5<br>(advanced_graph/kruskal)         | x | o   | o      | x     |
