@@ -36,3 +36,5 @@
 | 15.2<br>(advanced_graph/tsort)           | x | o   | o      | x     |
 | 15.4<br>(advanced_graph/tree_diameter)   | x | o   | o      | x     |
 | 15.5<br>(advanced_graph/kruskal)         | x | o   | o      | x     |
+| 17.1<br>(advanced_db)/coin_changing      | x | o   | x      | x     |
+| 17.2<br>(advanced_db)/knapsack           |   |     |        |       |
