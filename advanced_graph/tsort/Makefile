@@ -10,6 +10,12 @@ main_bfs_cpp: main_bfs.cpp
 test_bfs_cpp: main_bfs_cpp
 	./test_bfs_cpp.sh
 
+test_bfs_py:
+	./test_bfs_py.sh
+
+test_dfs_py:
+	./test_dfs_py.sh
+
 clean:
 	rm -rf main_bfs_cpp main_dfs_cpp
 
