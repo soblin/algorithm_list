@@ -1,45 +1,64 @@
 #!/bin/bash
 
 output=`python3 main.py <<EOF
-18
-insert 8
-insert 2
-insert 3
-insert 7
-insert 22
-insert 1
-find 1
-find 2
-find 3
-find 4
-find 5
-find 6
-find 7
-find 8
-print
-delete 3
-delete 7
-print
-EOF
-`
+4 6
+0 1 1
+0 2 5
+1 2 2
+1 3 4
+2 3 1
+3 2 7
+EOF`
 
-expected=$'yes
-yes
-yes
-no
-no
-no
-yes
-yes
- 1 2 3 7 8 22
- 8 2 1 3 7 22
- 1 2 8 22
- 8 2 1 22'
+expected=$'0 1 3 4
+INF 0 2 3
+INF INF 0 1
+INF INF 7 0'
 
-if [ "$expected" = "$output" ]; then
+if [ "$output" = "$expected" ]; then
     echo "OK"
 else
     echo "NG"
     echo "$output"
-    exit 1
+fi
+
+output=`python3 main.py <<EOF
+4 6
+0 1 1
+0 2 -5
+1 2 2
+1 3 4
+2 3 1
+3 2 7
+EOF`
+
+expected=$'0 1 -5 -4
+INF 0 2 3
+INF INF 0 1
+INF INF 7 0'
+
+if [ "$output" = "$expected" ]; then
+    echo "OK"
+else
+    echo "NG"
+    echo "$output"
+fi
+
+output=`python3 main.py <<EOF
+4 6
+0 1 1
+0 2 5
+1 2 2
+1 3 4
+2 3 1
+3 2 -7
+EOF`
+
+expected=$'NEGATIVE CYCLE'
+
+if [ "$output" = "$expected" ]; then
+    echo "OK"
+else
+    echo "NG"
+    echo "$output"
 fi

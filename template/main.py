@@ -2,51 +2,58 @@
 import sys
 input = sys.stdin.readline
 
-class Process:
-    def __init__(self, name, proc_time):
-        self.name = name
-        self.proc_time = proc_time
 
-class Queue:
-    def __init__(self):
-        self.head = 0
-        self.tail = 0
-        self.queue = [Process("", 0) for _ in range(100)]
+def warshall_floyd(num_node, adj_mat):
+    costs = [[float('inf') for _ in range(num_node)] for _ in range(num_node)]
 
-    def enqueue(self, name, proc_time):
-        self.queue[self.tail].name = name
-        self.queue[self.tail].proc_time = proc_time
-        self.tail += 1
+    for u in range(num_node):
+        costs[u][u] = 0
+        for edge in adj_mat[u]:
+            v = edge[0]
+            c = edge[1]
+            costs[u][v] = c
 
-    def dequeue(self):
-        self.head += 1
+    for k in range(num_node):
+        for i in range(num_node):
+            if costs[i][k] == float('inf'):
+                continue
+            for j in range(num_node):
+                if costs[k][j] == float('inf'):
+                    continue
+                tmp_cost = costs[i][k] + costs[k][j]
+                if tmp_cost < costs[i][j]:
+                    costs[i][j] = tmp_cost
 
-    def empty(self):
-        return self.head == self.tail
+    negative_cycle = False
+    for i in range(num_node):
+        if costs[i][i] < 0:
+            negative_cycle = True
+            break
 
-    def __getitem__(self, key):
-        return self.queue[key]
-    
+    if negative_cycle:
+        print("NEGATIVE CYCLE")
+        return
+
+    for i in range(num_node):
+        for j in range(num_node):
+            cost = costs[i][j]
+            if cost == float('inf'):
+                print("INF", end="")
+            else:
+                print(cost, end="")
+            if j != (num_node - 1):
+                print(' ', end="")
+        print('')
+
+    return
+
+
 if __name__ == '__main__':
-    n, quantum = map(int, input().split())
+    num_node, num_q = map(int, input().split())
+    adj_mat = [[] for _ in range(num_node)]
 
-    queue = Queue()
+    for _ in range(num_q):
+        u, v, c = map(int, input().split())
+        adj_mat[u].append([v, c])
 
-    acc_time = 0
-    
-    for _ in range(n):
-        name, proc_time_str = input().split()
-        proc_time = int(proc_time_str)
-        queue.enqueue(name, proc_time)
-
-    while not queue.empty():
-        name = queue[queue.head].name
-        proc_time = queue[queue.head].proc_time
-        if proc_time <= quantum:
-            acc_time += proc_time
-            queue.dequeue()
-            print(str(name) + ' ' + str(acc_time))
-        else:
-            acc_time += quantum
-            queue.dequeue()
-            queue.enqueue(name, proc_time - quantum)
+    warshall_floyd(num_node, adj_mat)
