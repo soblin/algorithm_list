@@ -1,6 +1,6 @@
 #!/bin/bash
 
-output=`./main_cpp <<EOF
+output=`./main_binsearch_cpp <<EOF
 5
 5
 1

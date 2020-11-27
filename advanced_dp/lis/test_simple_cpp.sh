@@ -1,6 +1,6 @@
 #!/bin/bash
 
-output=`./main_c <<EOF
+output=`./main_simple_cpp <<EOF
 5
 5
 1
