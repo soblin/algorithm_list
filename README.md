@@ -39,3 +39,4 @@
 | 17.1<br>(advanced_dp)/coin_changing      | x | o   | x      | x     |
 | 17.2<br>(advanced_dp)/knapsack           | x | o   | x      | x     |
 | 17.3<br>(advanved_dp)/lis                | x | o   | x      | x     |
+| 17.4<br>(advanced_dp)/maximum_square     | x | o   | x      | x     |
