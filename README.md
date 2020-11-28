@@ -40,3 +40,6 @@
 | 17.2<br>(advanced_dp)/knapsack           | x | o   | x      | x     |
 | 17.3<br>(advanved_dp)/lis                | x | o   | x      | x     |
 | 17.4<br>(advanced_dp)/maximum_square     | x | o   | x      | x     |
+| 19.1<br>(heuristic_search/8queen)        | x | o   | x      | x     |
+| 19.2<br>(heuristic_search/8puzzle)       | x | o   | x      | x     |
+| 19.3<br>(heuristic_search/15puzzle)      | x | o   | x      | x     |
