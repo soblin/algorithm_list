@@ -12,7 +12,6 @@ int main() {
   const int n = n_;
 
   vector<int> A;
-  A.push_back(-1);
   for (int i = 0; i < n; ++i) {
     int a;
     cin >> a;
@@ -22,22 +21,25 @@ int main() {
   vector<int> L;
   L.resize(n + 1);
   vector<int> P;
-  P.resize(n + 1);
-
-  A[0] = -1;
+  P.resize(n);
+  
   L[0] = 0;
+  L[1] = 1;
   P[0] = -1;
-  for (int i = 1; i <= n; ++i) {
+  int opt_ind_lis = 0;
+  for (int i = 1; i < n; ++i) {
     int k = 0; // dummy previous LIS element of A[i]
 
     for (int j = 0; j < i; ++j) {
-      if (A[j] < A[i] and L[j] > L[k])
-        k = j;
+      if (A[j] < A[i] and L[j+1] > L[k])
+        k = j+1;
     }
 
-    L[i] = L[k] + 1;
-    P[i] = k;
+    L[i+1] = L[k] + 1;
+    if (L[opt_ind_lis] < L[i+1])
+      opt_ind_lis = i+1;
+    P[i] = k-1;
   }
 
-  cout << L[n] << endl;
+  cout << L[opt_ind_lis] << endl;
 }

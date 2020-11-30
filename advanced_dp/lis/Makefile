@@ -1,9 +1,3 @@
-main_c: main.c
-	gcc -std=c11 -g -static main.c -o main_c
-
-test_c: main_c
-	./test_c.sh
-
 main_simple_cpp: main_simple.cpp
 	g++ -std=c++11 -g -static main_simple.cpp -o main_simple_cpp
 
@@ -16,8 +10,11 @@ main_binsearch_cpp: main_binsearch.cpp
 test_binsearch_cpp: main_binsearch_cpp
 	./test_binsearch_cpp.sh
 
-test_py:
-	./test_py.sh
+test_simple_py:
+	./test_simple_py.sh
+
+test_binsearch_py:
+	./test_binsearch_py.sh
 
 clean:
 	rm -rf main_simple_cpp main_binsearch_cpp main_c
