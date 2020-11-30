@@ -1,59 +1,31 @@
 # -*- coding: utf-8 -*-
 import sys
+import copy
 input = sys.stdin.readline
 
-
-def warshall_floyd(num_node, adj_mat):
-    costs = [[float('inf') for _ in range(num_node)] for _ in range(num_node)]
-
-    for u in range(num_node):
-        costs[u][u] = 0
-        for edge in adj_mat[u]:
-            v = edge[0]
-            c = edge[1]
-            costs[u][v] = c
-
-    for k in range(num_node):
-        for i in range(num_node):
-            if costs[i][k] == float('inf'):
-                continue
-            for j in range(num_node):
-                if costs[k][j] == float('inf'):
-                    continue
-                tmp_cost = costs[i][k] + costs[k][j]
-                if tmp_cost < costs[i][j]:
-                    costs[i][j] = tmp_cost
-
-    negative_cycle = False
-    for i in range(num_node):
-        if costs[i][i] < 0:
-            negative_cycle = True
-            break
-
-    if negative_cycle:
-        print("NEGATIVE CYCLE")
-        return
-
-    for i in range(num_node):
-        for j in range(num_node):
-            cost = costs[i][j]
-            if cost == float('inf'):
-                print("INF", end="")
-            else:
-                print(cost, end="")
-            if j != (num_node - 1):
-                print(' ', end="")
-        print('')
-
-    return
-
-
 if __name__ == '__main__':
-    num_node, num_q = map(int, input().split())
-    adj_mat = [[] for _ in range(num_node)]
+    H, W= map(int, input().split())
+    board = [[0 for _ in range(W)] for _ in range(H)]
+    costs = copy.deepcopy(board)
+    
+    for i in range(H):
+        inputs = list(input().split())
+        for j in range(W):
+            if int(inputs[j]) == 1:
+                board[i][j] = 1
 
-    for _ in range(num_q):
-        u, v, c = map(int, input().split())
-        adj_mat[u].append([v, c])
+    for i in range(W):
+        costs[0][i] =  1 if board[0][i] == 0 else 0
+    for j in range(H):
+        costs[j][0] =  1 if board[j][0] == 0 else 0
 
-    warshall_floyd(num_node, adj_mat)
+    ret = 0
+    for i in range(1, H):
+        for j in range(1, W):
+            if board[i][j] == 1:
+                costs[i][j] = 0
+            else:
+                costs[i][j] = min(costs[i-1][j], min(costs[i][j-1], costs[i-1][j-1])) + 1
+                ret = max(ret, costs[i][j])
+
+    print(ret*ret, end="")               
